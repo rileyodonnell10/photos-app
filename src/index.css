@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f5f5f5;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.photoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+}
+
+.photoContainer {
+    position: relative;
+    height: 300px;
+    margin: 2px;
+}
+
+.photoContainerHover:hover {
+    cursor: pointer;
+}
+
+.photoContainerHover:hover .check {
+    color: #d3e6f7;
+    display: block;
+}
+
+.photoContainerSelected:hover {
+    cursor: pointer;
+}
+
+.photoContainerSelected .check {
+    color: #1a73e8;
+    display: block;
+}
+
+.photo {
+    height: 100%;
+}
+
+.check {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.hourglass {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.shared {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.footerBar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 75px;
+    background: rgb(211, 230, 247);
+}
+
+.footerSection {
+    display: flex;
+    align-items: center;
+}
+
+.footerSection > * {
+    padding: 0 10px;
+}
+
+.left {
+    margin: 0 auto 0 25px;
+}
+
+.right {
+    margin: 0 25px 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.shareModal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+.modalButtons {
+    margin: auto 0 0 auto;
+}
+
+.button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background: none;
+    color: #1a73e8;
+}
+
+.shareButton {
+    background: #1a73e8;
+    color: white;
+    margin-left: 15px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    margin-left: auto;
+    margin-bottom: -25px;
+}
